@@ -1,9 +1,298 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7 ie" lang="en-CA"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8 ie" lang="en-CA"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9 ie" lang="en-CA"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-CA"> <!--<![endif]-->
+<html lang="en-CA" prefix="og: http://ogp.me/ns#">
 <head>
-  <meta charset="UTF-8">
-  <title></title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<!-- title -->
+<title>Rachel Qiuqi Li:Front End Desginer&Developer</title>
+<link rel="stylesheet" href="styles.css">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link rel="shortcut icon" href="icon/icon.png"  />
 </head>
-<body></body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script type="text/javascript">
+
+
+
+
+
+// icon animation
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+    if (scroll >=1000) {
+        $(".skill").addClass("icon");
+    } else {
+        $(".skill").removeClass("icon");
+    }
+});
+
+
+// progressbar animation
+$(function() {
+  $('progress').each(function() {
+    var max = $(this).val();
+    $(this).val(0).animate({
+      value: max
+    }, {
+      duration: 2000
+    });
+  });
+});
+
+setTimeout(function() {
+  $('#html-pourcent').html('100%');
+},2800);
+
+setTimeout(function() {
+  $('#css-pourcent').html('90%');
+},3500);
+
+setTimeout(function() {
+  $('#javascript-pourcent').html('70%');
+},4200);
+
+setTimeout(function() {
+  $('#php-pourcent').html('55%');
+},4900);
+
+setTimeout(function() {
+  $('#angular-pourcent').html('65%');
+},5600);
+
+
+// scroll show button
+
+$(document).ready(function() {
+    $(window).scroll( function(){
+        $('.top').each( function(i){
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            if( bottom_of_window > bottom_of_object ){
+                $(this).animate({'opacity':'1'},500);
+            }
+        }); 
+    });
+});
+
+
+
+</script>
+
+<body>
+
+<div id="title" >
+	<div class="name">
+		<h1>Rachel Qiuqi Li</h1>
+		<h2>Front End Designer & Developer</h2>
+		<h2>3D Generalist</h2>
+	</div>
+	<div class="link">
+		<a target="" title="GitHub" href="https://github.com/qiuqili">
+			<img  class="buzz" src="img/git.svg">
+		</a>
+		<a target="" title="LinkedIn" href="https://www.linkedin.com/in/qiuqi-li-2163a9b6?trk=nav_responsive_tab_profile_pic">
+			<img  class="buzz" src="img/link.svg">
+		</a>
+		<a target="" title="Twitter" href="https://twitter.com/liqiuqi">
+			<img   class="buzz" src="img/twitter.svg">
+		</a>
+		<a class="email" title="email" href="mailto:rachelqiuqi@gmail.com">
+			<img  class="buzz" src="img/email.svg">
+		</a> 
+		<a class="phone" title="phone" href="tel:2896818727">
+			<img  class="buzz" src="img/phone.svg">
+		</a>
+	</div>
+</div>
+
+
+
+<div class="flexbox">
+		
+	<div class="col1">
+
+		<div class="capition">
+			<h3>Experience</h3><div class="line"></div>
+		</div>
+			<div class="container">
+				<div class="p1">
+					<div class="date">
+						<p>2012-2013</p>
+					</div>
+					<div class="content">
+						<h3>Packaging Designer</h3>
+						<h4>Mousework</h4>
+						<p>come up ideas about craft toys
+						for kids to play with
+						design toys and the package
+						marketing and sale associate</p>
+					</div>
+				</div>
+
+
+				<div class="p2">
+					<div class="date">
+						<p >2013-2014</p>
+					</div>
+					<div class="content">
+						<h3>Graphic Designer </h3>
+						<h4>Sina.com Inc.</h4>
+						<p>graphic design for the web page<br>
+						worked with different designers 
+						as a team to solve all kinds of visual 
+						problems<br>User satisfaction research for website 
+						and mobile apps</p>
+					</div>
+				</div>
+
+
+				<div class="p3">
+					<div class="date">
+						<p >2013-2015</p>
+					</div>
+						<div class="content">
+							<h3>Freelancer</h3>
+							<h4>Shanghai , China</h4>
+							<p>worked on projects such as magazine
+							covers,print design and pakage design
+							use Maya and 3dMax create 3d model
+							and render 3d scenes for landscape 
+							design
+							design  characters for online game and
+							comics.</p>
+						</div>	
+					</div>
+				</div>
+		
+		<br>
+
+			<div class="capition">
+				<h3>Hobbies</h3>
+				<div class="line"></div>
+			</div>
+			<div class="content">
+				<br>
+				<br>
+				<p>Travelling<br>    Music<br>Painting  <br>Swimming <br>Film</p>
+			</div>	
+	</div>
+	
+
+<div class="col2">
+	<div class="capition">
+		<h3>Education</h3><div class="line"></div>
+	</div>
+
+
+	<div class="container">
+		
+
+		<div class="p1">
+			<div class="date">
+				<p>2010-2014</p>
+			</div>
+		<div class="content">
+			<h3>Tongji University</h3>
+			<p>Shanghai,China<br>
+			Animation<br>
+			Bachelor of Arts (B.A.)
+			</p>
+		</div>
+	</div>
+
+
+		<div class="p2">
+			<div class="date">
+				<p>2013</p>
+			</div>
+		<div class="content">
+			<h3>Kunshan University</h3>
+			<p>Tainan,Taiwan<br>
+			Graphic design,oil painting<br>
+			Exchange studtent
+			</p>
+		</div>
+	</div>
+
+
+	<div class="p3">
+		<div class="date">
+			<p>2014-2015</p>
+		</div>
+	<div class="content">
+			<h3>Sheridan College</h3>
+			<p>Oakville,Canada<br>
+			Computer Animation<br>
+			Graduate Certificate
+			</p>
+		</div>
+	</div>
+
+	<div class="p4">
+		<div class="date">
+			<p>2015-now</p>
+		</div>
+		<div class="content">
+			<h3>Sheridan College</h3>
+			<p>Oakville,Canada<br>
+			Interactive Media<br>
+			Graduate Certificate
+			</p>
+		</div>
+	</div>
+	</div>
+
+
+		<div class="capition">
+			<h3>Skills</h3><div class="line"></div>
+		</div>
+
+		<div class="skill">
+			<img src="img/ai.png"><img src="img/ps.png"><img src="img/maya.png"><img src="img/ae.png">
+		</div>
+
+
+		<ul class="skills-bar-container">
+
+			<label>HTML5/CSS3</label>
+				<span class="percent" id="css-pourcent"></span>
+			<li>
+				<span class="progressbar progressblue" id="progress-css"></span>
+			</li>
+
+			<label>Javascript / jQuery</label>
+				<span class="percent" id="javascript-pourcent"></span>
+			<li>
+				<span class="progressbar progresspurple" id="progress-javascript"></span>
+			</li>
+
+			<label>PHP/MySQL</label>
+				<span class="percent" id="php-pourcent"></span>
+			<li>
+				<span class="progressbar progressorange" id="progress-php"></span>
+			</li>
+
+			<label>Wordpress</label>
+				<span class="percent" id="angular-pourcent"></span>
+			<li>
+				<span class="progressbar progressgreen" id="progress-angular"></span>
+			</li>
+
+		</ul>
+
+
+	</div>
+</div>
+<div class="top"  onClick="window.location='#title'" ></div>
+<footer></footer>
+
+
+</body>
 </html>
