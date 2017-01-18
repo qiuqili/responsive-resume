@@ -87,6 +87,11 @@ h2 {
   font-family: Roboto Slab;
 }
 
+a {
+  margin-top: 2rem;
+  text-decoration: none;
+}
+
 .title {
   align-items: center;
 }

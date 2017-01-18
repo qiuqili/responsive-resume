@@ -45,6 +45,10 @@ h2 {
      }
 }
 
+a{
+  margin-top: 2rem;
+  text-decoration: none;
+}
 
 .title {
 @extend .column;
@@ -105,3 +109,5 @@ align-items: center;
   border-radius: 50%;
 
 }
+
+
