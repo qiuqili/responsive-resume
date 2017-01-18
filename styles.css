@@ -69,7 +69,7 @@ html {
   flex-direction: column;
 }
 
-.row, .capition, .content {
+.row, .content {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -81,6 +81,7 @@ h1 {
 }
 
 h2 {
+  color: #514f4f;
   font-weight: 400;
   font-size: 1.2rem;
 }
@@ -90,17 +91,11 @@ h2 {
 }
 
 .title h1 {
-  margin-top: 4rem;
+  margin-top: 5.5rem;
 }
 
 .col {
   margin-top: 3.6rem;
-}
-
-.capition .line {
-  width: 12rem;
-  border-top: 0.2rem solid #f05955;
-  align-self: center;
 }
 
 .content {
@@ -108,8 +103,25 @@ h2 {
   margin-top: 1rem;
 }
 
-.content time {
+.content .line {
   width: 100%;
+  border-top: 0.2rem solid #f05955;
+  align-self: center;
+  margin-left: 1rem;
+}
+
+.content .triangle {
+  width: 0;
+  height: 0;
+  border-left: 0.3rem solid transparent;
+  border-right: 0.3rem solid transparent;
+  border-bottom: 0.5rem solid #f05955;
+  margin: 0.3rem;
+}
+
+.content time {
+  width: 50%;
+  text-align: center;
 }
 
 .content div {
@@ -123,4 +135,5 @@ h2 {
 .content div p {
   color: #514f4f;
   font-size: 1rem;
+  margin-top: 0.5rem;
 }
