@@ -60,7 +60,7 @@ html {
 
 .wrap {
   margin: 0.9rem;
-  height: 60rem;
+  height: auto;
   background-color: white;
 }
 
@@ -83,7 +83,8 @@ h1 {
 h2 {
   color: #514f4f;
   font-weight: 400;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  font-family: Roboto Slab;
 }
 
 .title {
@@ -134,6 +135,12 @@ h2 {
 
 .content div p {
   color: #514f4f;
-  font-size: 1rem;
   margin-top: 0.5rem;
+}
+
+.tools div {
+  height: 2rem;
+  width: 2rem;
+  border: 1px solid black;
+  border-radius: 50%;
 }

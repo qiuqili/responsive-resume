@@ -14,7 +14,7 @@ html {
 
 .wrap  {
 margin: 0.9rem;
-height: 60rem;
+height: auto;
 background-color: white;
 }
 
@@ -40,9 +40,11 @@ h2 {
   color: $grey;
   font:{
     weight: 400;
-    size: 1.2rem;
+    size: 1rem;
+    family: Roboto Slab;
      }
 }
+
 
 .title {
 @extend .column;
@@ -80,17 +82,26 @@ align-items: center;
    time {
    width: 50%;
    text-align: center;
- }
+   }
   div {
    width: 100%;
      h3{
     font-weight:  bold;
+
   }
-  
+
   p {
     color: $grey;
-    font-size: 1rem;
     margin-top: 0.5rem;
-  }
+   }
  }
+}
+
+
+.tools div{
+  height:2rem;
+  width:2rem;
+  border:1px solid black;
+  border-radius: 50%;
+
 }
