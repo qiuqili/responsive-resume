@@ -64,12 +64,12 @@ html {
   background-color: white;
 }
 
-.column, .title, .col {
+.column, .title, .col, .content .bars {
   display: flex;
   flex-direction: column;
 }
 
-.row, .content {
+.row, .content, .skill {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -87,9 +87,13 @@ h2 {
   font-family: Roboto Slab;
 }
 
-a {
+.link {
   margin-top: 2rem;
+}
+
+.link a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 .title {
@@ -143,9 +147,22 @@ a {
   margin-top: 0.5rem;
 }
 
-.tools div {
+.content .bars {
+  justify-content: space-between;
+}
+
+.content .bars p {
+  margin: 0;
+}
+
+.skill {
+  padding: 1rem;
+  text-align: center;
+}
+
+.skill .tools {
   height: 2rem;
   width: 2rem;
-  border: 1px solid black;
+  border: 0.1rem solid black;
   border-radius: 50%;
 }

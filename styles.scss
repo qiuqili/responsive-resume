@@ -45,9 +45,13 @@ h2 {
      }
 }
 
-a{
+.link{
   margin-top: 2rem;
+a{
   text-decoration: none;
+  cursor:pointer;
+}
+  
 }
 
 .title {
@@ -86,7 +90,8 @@ align-items: center;
    time {
    width: 50%;
    text-align: center;
-   }
+     }
+
   div {
    width: 100%;
      h3{
@@ -99,15 +104,28 @@ align-items: center;
     margin-top: 0.5rem;
    }
  }
+
+.bars{
+  @extend .column;
+  margin: 0 ;
+  }
 }
 
+}
 
-.tools div{
+.skill{
+   @extend .row;
+ padding:1rem;
+ text-align: center;
+ 
+ .tools{
   height:2rem;
   width:2rem;
-  border:1px solid black;
+  border:0.1rem solid black;
   border-radius: 50%;
-
+  
 }
 
+
+}
 
