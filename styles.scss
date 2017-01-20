@@ -6,17 +6,13 @@ $eggshell: #e9d09a;
 $red: #f05955;
 $grey: #514f4f;
 
+
 html {
  font-family: Source Sans Pro; 
  background: url("img/colors.jpg") no-repeat center center fixed;
  background-size: cover;
 }
 
-.wrap  {
-margin: 0.9rem;
-height: auto;
-background-color: white;
-}
 
 .column {
   display: flex;
@@ -28,6 +24,14 @@ background-color: white;
   flex-direction: row;
   justify-content: space-around;
 }
+
+
+body  {
+  margin: 0.9rem;
+  height: auto;
+  background-color: white;
+ }
+
 
 h1 {
  font:{
@@ -47,19 +51,18 @@ h2 {
 
 .link{
   margin-top: 2rem;
-a{
-  text-decoration: none;
-  cursor:pointer;
-}
-  
+  a {
+    text-decoration: none;
+    cursor: pointer;
+  }
 }
 
 .title {
-@extend .column;
-align-items: center;
-  h1{
-    margin-top: 5.5rem;
-    }
+  @extend .column;
+  align-items: center;
+    h1{
+      margin-top: 5.5rem;
+      }
 }
 
 .col {
@@ -67,61 +70,76 @@ align-items: center;
   margin-top: 3.6rem;
 }
 
-
 .content {
   @extend .row;
   padding: 1rem;
   margin-top: 1rem;
-  
+
   .line {
     width: 100%;
     border-top: 0.2rem solid $red;
     align-self: center;
     margin-left: 1rem;
-       }
-    .triangle {
+  }
+
+  .triangle {
     width: 0;
     height: 0;
-    border-left:0.3rem solid transparent;
-    border-right:0.3rem solid transparent;
+    border-left: 0.3rem solid transparent;
+    border-right: 0.3rem solid transparent;
     border-bottom: 0.5rem solid $red;
     margin: 0.3rem;
-      }
-   time ,span{
-   width: 50%;
-   text-align: center;
-     }
+  }
+
+  time ,span {
+    width: 50%;
+    text-align: center;
+  }
 
   div {
    width: 100%;
-     h3{
-    font-weight:  bold;
+    h3 {
+    font-weight: bold;
   }
-
-  p {
+    p {
     color: $grey;
     margin-top: 0.5rem;
    }
  }
 
-.bars{
-  @extend .column;
-  margin: 0 ;
-  }
-
   .tools {
-      @extend .row;
-      text-align: center;
-    
-    p{
-  height: 2rem;
-  width: 2rem;
-  border: 0.1rem solid black;
-  border-radius: 50%;
+    @extend .row;
+    text-align: center;
+    p {
+      height: 2rem;
+      width: 2rem;
+      border: 0.1rem solid black;
+      border-radius: 50%;
     }
   }
-
 
 }
 
 
+// pad
+@media (min-width: 600px) { 
+
+}
+
+// desktop
+@media (min-width: 960px) {
+ .wrap {
+   display: flex;
+   flex-direction: row;
+   padding: 15rem;
+    }
+    .col {
+      width: 50%;
+    }
+    h1 {
+      font-size: 3rem;
+    }
+    h2,h4,h3 {
+      font-size: 1.5rem;
+    }
+}

@@ -58,13 +58,7 @@ html {
   background-size: cover;
 }
 
-.wrap {
-  margin: 0.9rem;
-  height: auto;
-  background-color: white;
-}
-
-.column, .title, .col, .content .bars {
+.column, .title, .col {
   display: flex;
   flex-direction: column;
 }
@@ -73,6 +67,12 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+
+body {
+  margin: 0.9rem;
+  height: auto;
+  background-color: white;
 }
 
 h1 {
@@ -147,10 +147,6 @@ h2 {
   margin-top: 0.5rem;
 }
 
-.content .bars {
-  margin: 0;
-}
-
 .content .tools {
   text-align: center;
 }
@@ -160,4 +156,21 @@ h2 {
   width: 2rem;
   border: 0.1rem solid black;
   border-radius: 50%;
+}
+
+@media (min-width: 960px) {
+  .wrap {
+    display: flex;
+    flex-direction: row;
+    padding: 15rem;
+  }
+  .col {
+    width: 50%;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  h2, h4, h3 {
+    font-size: 1.5rem;
+  }
 }
