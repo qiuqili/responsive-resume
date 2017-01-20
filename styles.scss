@@ -87,7 +87,7 @@ align-items: center;
     border-bottom: 0.5rem solid $red;
     margin: 0.3rem;
       }
-   time {
+   time ,span{
    width: 50%;
    text-align: center;
      }
@@ -96,7 +96,6 @@ align-items: center;
    width: 100%;
      h3{
     font-weight:  bold;
-
   }
 
   p {
@@ -109,18 +108,20 @@ align-items: center;
   @extend .column;
   margin: 0 ;
   }
-}
-}
 
-.skill{
-  @extend .row;
-  padding: 1rem;
-  text-align: center;
-  .tools{
+  .tools {
+      @extend .row;
+      text-align: center;
+    
+    p{
   height: 2rem;
   width: 2rem;
   border: 0.1rem solid black;
   border-radius: 50%;
+    }
   }
+
+
 }
+
 
