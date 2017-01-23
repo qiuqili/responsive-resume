@@ -83,7 +83,6 @@ h1 {
 h2 {
   color: #514f4f;
   font-weight: 400;
-  font-size: 1rem;
   font-family: Roboto Slab;
 }
 
@@ -98,6 +97,8 @@ h2 {
 
 .title {
   align-items: center;
+  justify-content: center;
+  height: 15rem;
 }
 
 .title h1 {
@@ -156,13 +157,20 @@ h2 {
   width: 2rem;
   border: 0.1rem solid black;
   border-radius: 50%;
+  line-height: 2;
 }
 
 @media (min-width: 960px) {
   .wrap {
     display: flex;
     flex-direction: row;
-    padding: 15rem;
+    padding: 5rem 12rem;
+  }
+  .title {
+    height: 35rem;
+  }
+  .title a {
+    font-size: 1.5rem;
   }
   .col {
     width: 50%;
@@ -170,7 +178,10 @@ h2 {
   h1 {
     font-size: 3rem;
   }
-  h2, h4, h3 {
-    font-size: 1.5rem;
+  h2, h4, p, time, span {
+    font-size: 1.3rem;
+  }
+  h3 {
+    font-size: 1.4rem;
   }
 }

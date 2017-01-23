@@ -44,7 +44,6 @@ h2 {
   color: $grey;
   font:{
     weight: 400;
-    size: 1rem;
     family: Roboto Slab;
      }
 }
@@ -60,6 +59,8 @@ h2 {
 .title {
   @extend .column;
   align-items: center;
+  justify-content: center;
+  height: 15rem;
     h1{
       margin-top: 5.5rem;
       }
@@ -100,7 +101,7 @@ h2 {
    width: 100%;
     h3 {
     font-weight: bold;
-  }
+   }
     p {
     color: $grey;
     margin-top: 0.5rem;
@@ -115,6 +116,7 @@ h2 {
       width: 2rem;
       border: 0.1rem solid black;
       border-radius: 50%;
+      line-height: 2;
     }
   }
 
@@ -131,7 +133,14 @@ h2 {
  .wrap {
    display: flex;
    flex-direction: row;
-   padding: 15rem;
+   padding: 5rem 12rem ;
+    }
+    .title{
+      height: 35rem;
+      a{
+        font-size: 1.5rem;
+
+      }
     }
     .col {
       width: 50%;
@@ -139,7 +148,10 @@ h2 {
     h1 {
       font-size: 3rem;
     }
-    h2,h4,h3 {
-      font-size: 1.5rem;
+    h2,h4,p,time,span {
+      font-size: 1.3rem;
     }
+   h3{
+     font-size: 1.4rem;
+   }
 }
