@@ -4,7 +4,7 @@ $blue: #329fb6;
 $purple: #d784de;
 $eggshell: #e9d09a;
 $red: #f05955;
-$grey: #514f4f;
+$grey: #6a6a6a;
 
 
 html {
@@ -17,6 +17,7 @@ html {
 .column {
   display: flex;
   flex-direction: column;
+   justify-content: space-around;
 }
 
 .row {
@@ -46,6 +47,13 @@ h2 {
     weight: 400;
     family: Roboto Slab;
      }
+}
+
+h4 {
+  font-family: Padauk;
+  font-weight: 700;
+ 
+  color: $grey;
 }
 
 .link{
@@ -101,6 +109,7 @@ h2 {
    width: 100%;
     h3 {
     font-weight: bold;
+    margin-bottom: 0.5rem;
    }
     p {
     color: $grey;
@@ -133,13 +142,12 @@ h2 {
  .wrap {
    display: flex;
    flex-direction: row;
-   padding: 5rem 12rem ;
+   padding: 2rem 7rem ;
     }
     .title{
       height: 35rem;
       a{
         font-size: 1.5rem;
-
       }
     }
     .col {
@@ -149,9 +157,12 @@ h2 {
       font-size: 3rem;
     }
     h2,h4,p,time,span {
-      font-size: 1.3rem;
+      font-size: 1.4rem;
     }
    h3{
-     font-size: 1.4rem;
+     font-size: 1.6rem;
+   }
+   h4{
+      line-height: 1.5rem;
    }
 }

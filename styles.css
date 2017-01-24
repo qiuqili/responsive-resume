@@ -61,6 +61,7 @@ html {
 .column, .title, .col {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
 }
 
 .row, .content, .content .tools {
@@ -81,9 +82,15 @@ h1 {
 }
 
 h2 {
-  color: #514f4f;
+  color: #6a6a6a;
   font-weight: 400;
   font-family: Roboto Slab;
+}
+
+h4 {
+  font-family: Padauk;
+  font-weight: 700;
+  color: #6a6a6a;
 }
 
 .link {
@@ -141,10 +148,11 @@ h2 {
 
 .content div h3 {
   font-weight: bold;
+  margin-bottom: 0.5rem;
 }
 
 .content div p {
-  color: #514f4f;
+  color: #6a6a6a;
   margin-top: 0.5rem;
 }
 
@@ -164,7 +172,7 @@ h2 {
   .wrap {
     display: flex;
     flex-direction: row;
-    padding: 5rem 12rem;
+    padding: 2rem 7rem;
   }
   .title {
     height: 35rem;
@@ -179,9 +187,12 @@ h2 {
     font-size: 3rem;
   }
   h2, h4, p, time, span {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
   h3 {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
+  }
+  h4 {
+    line-height: 1.5rem;
   }
 }
