@@ -4,7 +4,7 @@ $blue: #329fb6;
 $purple: #d784de;
 $eggshell: #e9d09a;
 $red: #f05955;
-$grey: #6a6a6a;
+$grey: #585858;
 
 
 html {
@@ -49,10 +49,18 @@ h2 {
      }
 }
 
+h3 {
+  margin-bottom: 0.5rem;
+      font:{
+    weight: 900;
+    size: 1.1rem;
+  
+     }
+}
+
 h4 {
   font-family: Padauk;
   font-weight: 700;
- 
   color: $grey;
 }
 
@@ -62,6 +70,12 @@ h4 {
     text-decoration: none;
     cursor: pointer;
   }
+}
+
+.contact{
+  @extend .row;
+  width:20%;
+ 
 }
 
 .title {
@@ -107,13 +121,10 @@ h4 {
 
   div {
    width: 100%;
-    h3 {
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-   }
+
     p {
     color: $grey;
-    margin-top: 0.5rem;
+    
    }
  }
 
