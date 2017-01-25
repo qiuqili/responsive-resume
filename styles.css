@@ -93,10 +93,8 @@ h3 {
   font-size: 1.1rem;
 }
 
-h4 {
+h4, p {
   font-family: Padauk;
-  font-weight: 700;
-  color: #585858;
 }
 
 .link {
@@ -158,6 +156,7 @@ h4 {
 
 .content div p {
   color: #585858;
+  margin-top: 0.5rem;
 }
 
 .content .tools {
