@@ -64,7 +64,7 @@ html {
   justify-content: space-around;
 }
 
-.row, .contact, .content, .content .tools {
+.row, .contact, .content, .skill, .skill .tools {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -128,19 +128,19 @@ h4, p {
   margin-top: 3.6rem;
 }
 
-.content {
+.content, .skill {
   padding: 1rem;
   margin-top: 1rem;
 }
 
-.content .line {
+.content .line, .skill .line {
   width: 100%;
   border-top: 0.2rem solid #f05955;
   align-self: center;
   margin-left: 1rem;
 }
 
-.content .triangle {
+.content .triangle, .skill .triangle {
   width: 0;
   height: 0;
   border-left: 0.3rem solid transparent;
@@ -149,30 +149,34 @@ h4, p {
   margin: 0.3rem;
 }
 
-.content time, .content span {
+.content time, .skill time, .content span, .skill span {
   width: 50%;
   text-align: center;
 }
 
-.content div {
+.content div, .skill div {
   width: 100%;
 }
 
-.content div p {
+.content div p, .skill div p {
   color: #585858;
   margin-top: 0.5rem;
 }
 
-.content .tools {
+.skill {
+  align-items: baseline;
+}
+
+.skill .tools {
   text-align: center;
 }
 
-.content .tools p {
-  height: 2rem;
-  width: 2rem;
+.skill .tools h3 {
+  height: 2.5rem;
+  width: 2.5rem;
   border: 0.1rem solid black;
   border-radius: 50%;
-  line-height: 2;
+  line-height: 2.5;
 }
 
 @media (min-width: 960px) {
@@ -190,11 +194,15 @@ h4, p {
   .title a {
     font-size: 1.5rem;
   }
+  .title h1 {
+    font-size: 3rem;
+  }
   .col {
     width: 50%;
+    padding: 2rem;
   }
-  h1 {
-    font-size: 3rem;
+  .col h1 {
+    font-size: 2.2rem;
   }
   h2, h4, p, time, span {
     font-size: 1.4rem;
