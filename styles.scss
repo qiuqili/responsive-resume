@@ -9,7 +9,7 @@ $grey: #585858;
 
 html {
  font-family: Source Sans Pro; 
- background: url("img/colors.jpg") no-repeat center center fixed;
+ background: url("img/colors.svg") no-repeat center center fixed;
  background-size: cover;
 }
 
@@ -17,14 +17,13 @@ html {
 .column {
   display: flex;
   flex-direction: column;
-   justify-content: space-around;
+  justify-content: space-around;
 }
 
 .row {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-}
+ }
 
 
 body {
@@ -98,40 +97,39 @@ h4,p {
   @extend .row;
   padding: 1rem;
   margin-top: 1rem;
-
-
-  .line {
+    .line {
+      width: 100%;
+      border-top: 0.2rem solid $red;
+      align-self: center;
+      margin-left: 1rem;
+    }
+    .triangle {
+      width: 0;
+      height: 0;
+      border-left: 0.3rem solid transparent;
+      border-right: 0.3rem solid transparent;
+      border-bottom: 0.5rem solid $red;
+      margin: 0.3rem;
+    }
+    div {
     width: 100%;
-    border-top: 0.2rem solid $red;
-    align-self: center;
-    margin-left: 1rem;
-  }
-
-  .triangle {
-    width: 0;
-    height: 0;
-    border-left: 0.3rem solid transparent;
-    border-right: 0.3rem solid transparent;
-    border-bottom: 0.5rem solid $red;
-    margin: 0.3rem;
-  }
-
-  time ,span {
-    width: 50%;
-    text-align: center;
-  }
-
-  div {
-   width: 100%;
-
-    p {
-    color: $grey;
-    margin-top: 0.5rem;
-   }
+      p {
+      color: $grey;
+      margin-top: 0.8rem;
+    }
  }
 
 }
 
+.hobby {
+   @extend .content;
+  text-align: center;
+}
+
+.caption {
+   @extend .content;
+
+}
 
   .skill {
   @extend .content;
@@ -156,18 +154,14 @@ h4,p {
 
 // desktop
 @media (min-width: 960px) {
- .wrap {
-   display: flex;
-   flex-direction: row;
-   padding: 2rem 7rem ;
-    }
+
 
     .contact {
       width: 5%;
     }
 
     .title {
-      height: 35rem;
+      height: 28rem;
       a{
         font-size: 1.5rem;
       }
@@ -176,9 +170,30 @@ h4,p {
         }
     }
 
-    .col {
+    .wrap {
+      padding:0 7rem;
+    }
+
+    .content {
+      flex-direction: column;
       width: 50%;
-      padding: 2rem;
+        .triangle {
+      border-left: 0.5rem solid transparent;
+      border-right: 0.5rem solid transparent;
+      border-bottom: 0.8rem solid $red;
+      margin-top: 1.3rem;
+       }
+
+    }
+
+      .caption {
+        width: 20rem;
+      }
+
+    .col {
+      flex-direction: row;
+      width: 100%;
+      align-items: flex-start;
        h1 {
       font-size: 2.2rem;
       }

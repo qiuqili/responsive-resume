@@ -54,7 +54,7 @@ table {
 
 html {
   font-family: Source Sans Pro;
-  background: url("img/colors.jpg") no-repeat center center fixed;
+  background: url("img/colors.svg") no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -64,10 +64,9 @@ html {
   justify-content: space-around;
 }
 
-.row, .contact, .content, .skill, .skill .tools {
+.row, .contact, .content, .hobby, .caption, .skill, .skill .tools {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
 }
 
 body {
@@ -128,19 +127,19 @@ h4, p {
   margin-top: 3.6rem;
 }
 
-.content, .skill {
+.content, .hobby, .caption, .skill {
   padding: 1rem;
   margin-top: 1rem;
 }
 
-.content .line, .skill .line {
+.content .line, .hobby .line, .caption .line, .skill .line {
   width: 100%;
   border-top: 0.2rem solid #f05955;
   align-self: center;
   margin-left: 1rem;
 }
 
-.content .triangle, .skill .triangle {
+.content .triangle, .hobby .triangle, .caption .triangle, .skill .triangle {
   width: 0;
   height: 0;
   border-left: 0.3rem solid transparent;
@@ -149,18 +148,17 @@ h4, p {
   margin: 0.3rem;
 }
 
-.content time, .skill time, .content span, .skill span {
-  width: 50%;
-  text-align: center;
-}
-
-.content div, .skill div {
+.content div, .hobby div, .caption div, .skill div {
   width: 100%;
 }
 
-.content div p, .skill div p {
+.content div p, .hobby div p, .caption div p, .skill div p {
   color: #585858;
-  margin-top: 0.5rem;
+  margin-top: 0.8rem;
+}
+
+.hobby {
+  text-align: center;
 }
 
 .skill {
@@ -180,16 +178,11 @@ h4, p {
 }
 
 @media (min-width: 960px) {
-  .wrap {
-    display: flex;
-    flex-direction: row;
-    padding: 2rem 7rem;
-  }
   .contact {
     width: 5%;
   }
   .title {
-    height: 35rem;
+    height: 28rem;
   }
   .title a {
     font-size: 1.5rem;
@@ -197,9 +190,26 @@ h4, p {
   .title h1 {
     font-size: 3rem;
   }
-  .col {
+  .wrap {
+    padding: 0 7rem;
+  }
+  .content, .hobby, .caption, .skill {
+    flex-direction: column;
     width: 50%;
-    padding: 2rem;
+  }
+  .content .triangle, .hobby .triangle, .caption .triangle, .skill .triangle {
+    border-left: 0.5rem solid transparent;
+    border-right: 0.5rem solid transparent;
+    border-bottom: 0.8rem solid #f05955;
+    margin-top: 1.3rem;
+  }
+  .caption {
+    width: 20rem;
+  }
+  .col {
+    flex-direction: row;
+    width: 100%;
+    align-items: flex-start;
   }
   .col h1 {
     font-size: 2.2rem;
