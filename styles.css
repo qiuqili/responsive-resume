@@ -58,7 +58,7 @@ html {
   background-size: cover;
 }
 
-.column, .title, .col {
+.column, .title, .wrap, .col {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -124,7 +124,7 @@ h4, p {
 }
 
 .title img {
-  width: 6%;
+  width: 18%;
 }
 
 .col {
@@ -162,11 +162,11 @@ h4, p {
 }
 
 .hobby {
-  text-align: center;
+  justify-content: space-around;
 }
 
 .hobby img {
-  width: 6%;
+  width: 8%;
 }
 
 .skill {
@@ -186,6 +186,9 @@ h4, p {
 }
 
 @media (min-width: 960px) {
+  body {
+    margin: 1.8rem;
+  }
   .contact {
     width: 5%;
   }
@@ -198,8 +201,11 @@ h4, p {
   .title h1 {
     font-size: 3rem;
   }
+  .title img {
+    width: 6%;
+  }
   .wrap {
-    padding: 0 7rem;
+    padding: 0 10rem;
   }
   .content, .hobby, .caption, .skill {
     flex-direction: column;
@@ -210,9 +216,6 @@ h4, p {
     border-right: 0.5rem solid transparent;
     border-bottom: 0.8rem solid #f05955;
     margin-top: 1.3rem;
-  }
-  .caption {
-    width: 20rem;
   }
   .col {
     flex-direction: row;
@@ -233,6 +236,8 @@ h4, p {
   }
   .hobby {
     flex-direction: row;
-    justify-content: space-around;
+  }
+  .hobby img {
+    width: 8%;
   }
 }
