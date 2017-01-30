@@ -230,9 +230,11 @@ h4, p {
   }
   h3 {
     font-size: 1.6rem;
+    height: 5rem;
   }
   h4 {
     line-height: 1.5rem;
+    height: 3.5rem;
   }
   .hobby {
     flex-direction: row;
