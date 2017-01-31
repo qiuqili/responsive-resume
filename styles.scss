@@ -17,7 +17,7 @@ html {
 .column {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  
 }
 
 .row {
@@ -87,7 +87,7 @@ h4,p {
   height: 15rem;
   clear: both;
     h1{
-      margin-top: 3.5rem;
+      margin: 2.5rem 0;
       }
       img {
         width: 18%;
@@ -197,6 +197,12 @@ h4,p {
       padding:0 10rem;
       
     }
+
+    .caption{
+      width: 22rem;
+      margin-right: 5rem;
+    }
+
 
     .content {
       flex-direction: column;
