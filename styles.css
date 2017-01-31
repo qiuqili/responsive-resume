@@ -73,15 +73,16 @@ body {
   margin: 0.9rem;
   height: auto;
   background-color: white;
+  font-size: 1.3rem;
 }
 
 h1 {
   font-weight: 900;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 h2 {
-  color: #585858;
+  color: #888686;
   font-weight: 400;
   font-family: Roboto Slab;
 }
@@ -89,7 +90,7 @@ h2 {
 h3 {
   margin-bottom: 0.5rem;
   font-weight: 900;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
 }
 
 h4, p {
@@ -136,6 +137,10 @@ h4, p {
   margin-top: 1rem;
 }
 
+.content time, .hobby time, .caption time, .skill time, .content span, .hobby span, .caption span, .skill span {
+  width: 50%;
+}
+
 .content .line, .hobby .line, .caption .line, .skill .line {
   width: 100%;
   border-top: 0.2rem solid #f05955;
@@ -157,7 +162,7 @@ h4, p {
 }
 
 .content div p, .hobby div p, .caption div p, .skill div p {
-  color: #585858;
+  color: #888686;
   margin-top: 0.8rem;
 }
 
@@ -209,7 +214,7 @@ h4, p {
   }
   .content, .hobby, .caption, .skill {
     flex-direction: column;
-    width: 50%;
+    max-width: 15rem;
   }
   .content .triangle, .hobby .triangle, .caption .triangle, .skill .triangle {
     border-left: 0.5rem solid transparent;
@@ -234,7 +239,6 @@ h4, p {
   }
   h4 {
     line-height: 1.5rem;
-    height: 3.5rem;
   }
   .hobby {
     flex-direction: row;
