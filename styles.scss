@@ -124,9 +124,17 @@ h4,p {
       height: 0;
       border-left: 0.3rem solid transparent;
       border-right: 0.3rem solid transparent;
-      border-bottom: 0.5rem solid $red;
       margin: 0.3rem;
     }
+    .up{
+      @extend .triangle;
+      border-bottom: 0.5rem solid $red;
+       }
+    .down{
+      @extend .triangle;
+      border-top: 0.5rem solid $red;
+       }
+
     div {
     width: 100%;
       p {
@@ -152,9 +160,7 @@ h4,p {
   .skill {
   @extend .content;
   align-items: baseline;
-  .tools {
-    @extend .row;
-    text-align: center;
+   text-align: center;
     h3 {
       height: 2.5rem;
       width: 2.5rem;
@@ -162,7 +168,7 @@ h4,p {
       border-radius: 50%;
       line-height: 2.5;
     }
-  }
+  
 }
 
 // pad
@@ -195,7 +201,6 @@ h4,p {
 
     .wrap {
       padding:0 10rem;
-      
     }
 
     .caption{
@@ -203,18 +208,23 @@ h4,p {
       margin-right: 5rem;
     }
 
-
     .content {
       flex-direction: column;
       max-width: 15rem;
         .triangle {
       border-left: 0.5rem solid transparent;
       border-right: 0.5rem solid transparent;
-      border-bottom: 0.8rem solid $red;
       margin-top: 1.3rem;
        }
+       .up {
+         border-bottom: 0.8rem solid $red;
+       }
+       .down {
+         border-top: 0.8rem solid $red;
+       }
     }
-          .col {
+
+    .col {
       flex-direction: row;
       width: 100%;
       align-items: flex-start;
@@ -238,10 +248,31 @@ h4,p {
 
   .hobby {
     flex-direction: row;
-    img{
+    img {
       width: 8%;
     }
   }
 
+  .skill {
+    height: 20rem;
+    flex-direction: column;
+      span {
+      margin-bottom: 1.8rem;
+      }
+      p {
+        width: 6rem;
+      }
+      h3 {
+      height: 3.2rem;
+      width: 3.2rem;
+      line-height: 2;
+      }
+      div{
+      display: flex;
+      align-items: baseline;
+    }
+  }
+
+  
 }
 

@@ -63,7 +63,7 @@ html {
   flex-direction: column;
 }
 
-.row, .contact, .content, .hobby, .caption, .skill, .skill .tools {
+.row, .contact, .content, .hobby, .caption, .skill {
   display: flex;
   flex-direction: row;
 }
@@ -147,13 +147,20 @@ h4, p {
   margin-left: 1rem;
 }
 
-.content .triangle, .hobby .triangle, .caption .triangle, .skill .triangle {
+.content .triangle, .hobby .triangle, .caption .triangle, .skill .triangle, .content .up, .hobby .up, .caption .up, .skill .up, .content .down, .hobby .down, .caption .down, .skill .down {
   width: 0;
   height: 0;
   border-left: 0.3rem solid transparent;
   border-right: 0.3rem solid transparent;
-  border-bottom: 0.5rem solid #f05955;
   margin: 0.3rem;
+}
+
+.content .up, .hobby .up, .caption .up, .skill .up {
+  border-bottom: 0.5rem solid #f05955;
+}
+
+.content .down, .hobby .down, .caption .down, .skill .down {
+  border-top: 0.5rem solid #f05955;
 }
 
 .content div, .hobby div, .caption div, .skill div {
@@ -175,13 +182,10 @@ h4, p {
 
 .skill {
   align-items: baseline;
-}
-
-.skill .tools {
   text-align: center;
 }
 
-.skill .tools h3 {
+.skill h3 {
   height: 2.5rem;
   width: 2.5rem;
   border: 0.1rem solid black;
@@ -219,11 +223,16 @@ h4, p {
     flex-direction: column;
     max-width: 15rem;
   }
-  .content .triangle, .hobby .triangle, .caption .triangle, .skill .triangle {
+  .content .triangle, .hobby .triangle, .caption .triangle, .skill .triangle, .content .up, .hobby .up, .caption .up, .skill .up, .content .down, .hobby .down, .caption .down, .skill .down {
     border-left: 0.5rem solid transparent;
     border-right: 0.5rem solid transparent;
-    border-bottom: 0.8rem solid #f05955;
     margin-top: 1.3rem;
+  }
+  .content .up, .hobby .up, .caption .up, .skill .up {
+    border-bottom: 0.8rem solid #f05955;
+  }
+  .content .down, .hobby .down, .caption .down, .skill .down {
+    border-top: 0.8rem solid #f05955;
   }
   .col {
     flex-direction: row;
@@ -248,5 +257,24 @@ h4, p {
   }
   .hobby img {
     width: 8%;
+  }
+  .skill {
+    height: 20rem;
+    flex-direction: column;
+  }
+  .skill span {
+    margin-bottom: 1.8rem;
+  }
+  .skill p {
+    width: 6rem;
+  }
+  .skill h3 {
+    height: 3.2rem;
+    width: 3.2rem;
+    line-height: 2;
+  }
+  .skill div {
+    display: flex;
+    align-items: baseline;
   }
 }
