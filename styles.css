@@ -213,7 +213,7 @@ h4, p {
     width: 6%;
   }
   .wrap {
-    padding: 0 10rem;
+    align-items: center;
   }
   .caption {
     width: 22rem;
@@ -236,11 +236,14 @@ h4, p {
   }
   .col {
     flex-direction: row;
-    width: 100%;
-    align-items: flex-start;
+    width: 60%;
+    justify-content: space-between;
   }
   .col h1 {
     font-size: 2.2rem;
+  }
+  .col img {
+    width: 5%;
   }
   h2, h4, p, time, span {
     font-size: 1.4rem;
@@ -251,12 +254,6 @@ h4, p {
   }
   h4 {
     line-height: 1.5rem;
-  }
-  .hobby {
-    flex-direction: row;
-  }
-  .hobby img {
-    width: 8%;
   }
   .skill {
     height: 20rem;
