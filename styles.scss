@@ -159,7 +159,7 @@ h4,p {
   .skill {
   @extend .content;
   align-items: baseline;
-   text-align: center;
+  
     h3 {
       height: 2.5rem;
       width: 2.5rem;
@@ -167,8 +167,13 @@ h4,p {
       border-radius: 50%;
       line-height: 2.5;
     }
+  div{
+    text-align: center;
+      }
+  }
   
-}
+    
+
 
 // pad
 @media (min-width: 600px) { 
@@ -182,6 +187,13 @@ h4,p {
 
 .col {
   width: 90%;
+}
+
+.skill{
+   div{
+    display: flex;
+    flex-direction: row;
+      }
 }
 
 }
