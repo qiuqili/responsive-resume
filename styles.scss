@@ -189,10 +189,33 @@ h4,p {
   width: 90%;
 }
 
-.skill{
-   div{
+.wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.skill {
+  flex-direction: row;
+  span {
+      font:{
+    weight: 900;
+    size: 1.4rem;
+          }
+    }
+
+    h3 {
+      height: 3rem;
+      width: 3rem;
+      border: 0.1rem solid black;
+      border-radius: 50%;
+      line-height: 2;
+    }
+
+   div {
+    width: 70%;
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
       }
 }
 
@@ -230,11 +253,14 @@ h4,p {
     .group{
       display: flex;
       flex-direction: row;
+      width: 80%;
+      justify-content: space-between;
+      
     }
 
     .content {
       flex-direction: column;
-      max-width: 15rem;
+      width: 20rem;
         .triangle {
       border-left: 0.5rem solid transparent;
       border-right: 0.5rem solid transparent;

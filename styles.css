@@ -210,9 +210,29 @@ h4, p {
   .col {
     width: 90%;
   }
-  .skill div {
+  .wrap {
     display: flex;
+    flex-direction: column;
+  }
+  .skill {
     flex-direction: row;
+  }
+  .skill span {
+    font-weight: 900;
+    font-size: 1.4rem;
+  }
+  .skill h3 {
+    height: 3rem;
+    width: 3rem;
+    border: 0.1rem solid black;
+    border-radius: 50%;
+    line-height: 2;
+  }
+  .skill div {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
   }
 }
 
@@ -242,10 +262,12 @@ h4, p {
   .group {
     display: flex;
     flex-direction: row;
+    width: 80%;
+    justify-content: space-between;
   }
   .content, .hobby, .caption, .skill {
     flex-direction: column;
-    max-width: 15rem;
+    width: 20rem;
   }
   .content .triangle, .hobby .triangle, .caption .triangle, .skill .triangle, .content .up, .hobby .up, .caption .up, .skill .up, .content .down, .hobby .down, .caption .down, .skill .down {
     border-left: 0.5rem solid transparent;
