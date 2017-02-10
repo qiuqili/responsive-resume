@@ -11,6 +11,8 @@ html {
  font-family: Source Sans Pro; 
  background: url("img/colors.svg") no-repeat center center fixed;
  background-size: cover;
+font-size: 15px;
+  
 }
 
 
@@ -35,8 +37,6 @@ body {
   margin: 0.9rem;
   height: auto;
   background-color: white;
-  font-size: 1.3rem;
-  
  }
 
 
@@ -188,6 +188,10 @@ h4,p {
 
 // pad
 @media (min-width: 600px) { 
+  
+html {
+  font-size: 22px;
+}
 
 .title {
   height: 20rem;
@@ -198,22 +202,6 @@ h4,p {
 
 .col {
   width: 90%;
-}
-
-
-
-.skill {
-  
-    h3 {
-      height: 3rem;
-      width: 3rem;
-      border: 0.1rem solid black;
-      border-radius: 50%;
-      line-height: 2;
-      font-size: 1.3rem;
-    }
-
-  
 }
 
 }
@@ -230,12 +218,7 @@ h4,p {
 
     .title {
       height: 28rem;
-      a{
-        font-size: 1.5rem;
-      }
-      h1 {
-      font-size: 3rem;
-        }
+     
        img{
          width: 6%;
        }
@@ -244,15 +227,13 @@ h4,p {
     .caption{
       width: 20rem;
       margin-right: 3rem;
-      
-    }
+     }
 
     .group{
       display: flex;
       flex-direction: row;
       width: 80%;
       justify-content: space-between;
-      
     }
 
     .content {
@@ -275,41 +256,23 @@ h4,p {
       flex-direction: row;
       width: 80%;
    
-       h1 {
-      font-size: 2.2rem;
-        }
-    
     }
     
-    h2,h4,p,time,span {
-      font-size: 1.4rem;
-    }
-
-    h3 {
-     font-size: 1.6rem;
-     height: 5rem;
-   }
 
     h4 {
       line-height: 1.5rem;
        }
 
-
-
   .skill {
     height: 20rem;
     flex-direction: column;
       span {
-      margin-bottom: 1.8rem;
+        margin-bottom: 1.8rem;
       }
       p {
         width: 6rem;
       }
-     
-      div{
-      display: flex;
-      align-items: baseline;
-    }
+    
   }
 
   .hobby{
