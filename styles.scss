@@ -239,17 +239,7 @@ html {
     .content {
       flex-direction: column;
       width: 20rem;
-        .triangle {
-      border-left: 0.5rem solid transparent;
-      border-right: 0.5rem solid transparent;
-      margin-top: 1.3rem;
-       }
-       .up {
-         border-bottom: 0.8rem solid $red;
-       }
-       .down {
-         border-top: 0.8rem solid $red;
-       }
+ 
     }
 
     .col {
@@ -258,7 +248,6 @@ html {
    
     }
     
-
     h4 {
       line-height: 1.5rem;
        }
