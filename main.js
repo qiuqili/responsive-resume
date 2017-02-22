@@ -1,0 +1,1 @@
+TweenMax.staggerFrom("img,h1,h2,.link",1,{sacle:0.5,opacity:0,y:-100,ease:Back.easeInOut},0.1);
