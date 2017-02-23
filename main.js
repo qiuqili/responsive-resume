@@ -1,1 +1,4 @@
-TweenMax.staggerFrom("img,h1,h2,.link",1,{sacle:0.5,opacity:0,y:-100,ease:Back.easeInOut},0.1);
+var tl = new TimelineLite();
+tl.staggerFrom("img,h1,h2,.link",1,{sacle:0,opacity:0,y:-100,ease:Back.easeInOut},0.1)
+  .from(".group",1,{sacle:0,opacity:0,y:-100,ease:Bounce.easeOut},"0.8")
+  .staggerFrom(".line,.up,.down",1.5,{sacle:0,opacity:0,y:-100,ease:Bounce.easeOut},0.1,"1");
