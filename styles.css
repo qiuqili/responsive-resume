@@ -205,11 +205,15 @@ h4, p {
 }
 
 .skill div {
-  width: 70%;
+  width: 15rem;
   display: flex;
-  justify-content: space-between;
   align-items: baseline;
   text-align: center;
+}
+
+.skill div p {
+  width: 5rem;
+  text-align: left;
 }
 
 @media (min-width: 600px) {
@@ -267,9 +271,6 @@ h4, p {
   }
   .skill span {
     margin-bottom: 1.8rem;
-  }
-  .skill p {
-    width: 6rem;
   }
   .hobby {
     flex-direction: row;

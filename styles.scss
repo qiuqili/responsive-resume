@@ -164,7 +164,7 @@ h4,p {
     size: 1.4rem;
           }
     }
-
+   
     h3 {
       height: 2rem;
       width: 2rem;
@@ -175,11 +175,14 @@ h4,p {
     }
 
    div {
-    width: 70%;
+    width: 15rem;
     display: flex;
-    justify-content: space-between;
     align-items: baseline;
     text-align: center;
+     p {
+        width: 5rem;
+        text-align: left;
+    }
       }
   }
   
@@ -258,10 +261,7 @@ html {
       span {
         margin-bottom: 1.8rem;
       }
-      p {
-        width: 6rem;
-      }
-    
+      
   }
 
   .hobby{
