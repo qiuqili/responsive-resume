@@ -231,7 +231,7 @@ h4, p {
   }
 }
 
-@media (min-width: 1366px) {
+@media (min-width: 1520px) {
   body {
     margin: 1.8rem;
   }
